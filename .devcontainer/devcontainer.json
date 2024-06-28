@@ -1,33 +1,18 @@
-//{
-//    
-//    "build": {
-//        "dockerfile": "Dockerfile"
-//    },
-//    "hostRequirements": {
-//        "cpus": 2
-//    },
-//    "customizations": {
-//        "vscode": {
-//            "extensions": [
-//                "ms-toolsai.jupyter",
-//                "ms-python.python"
-//            ]
-//        }
-//    }
-//}
-
 {
-    "name": "My Codespace",
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:0-ubuntu-20.04",
-    "settings": {
-      "terminal.integrated.shell.linux": "/bin/bash"
+    
+    "build": {
+        "dockerfile": "Dockerfile"
     },
-    "extensions": [
-      "ms-python.python",
-      "ms-azuretools.vscode-docker"
-    ],
-    "postCreateCommand": "pip install -r requirements.txt",
-    "forwardPorts": [3000],
-    "remoteUser": "vscode"
-  }
-  
+    "hostRequirements": {
+        "cpus": 2
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python"
+            ]
+        }
+    }
+}
+
